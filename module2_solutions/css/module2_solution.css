@@ -1,0 +1,9 @@
+header{
+    color:red;
+    font-size:5em;
+    text-align: center;
+    padding: 10px;
+}
+.section{
+    border: 2px solid black;
+}
