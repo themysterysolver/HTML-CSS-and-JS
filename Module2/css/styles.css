@@ -1,0 +1,7 @@
+.row > div{
+    border:  solid black 3px;
+    color: red;
+}
+.row{
+    margin-bottom: 15px;
+}
