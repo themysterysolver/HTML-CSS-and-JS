@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOADER</title>
+    <link href="loader.css" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader">
+        <div class="container">
+            <div class="loader">
+                <span>P</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>T</span><span>N</span><span>A</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <h1>Welcome to Prayatna</h1>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const minLoadTime = 3000; // 3 seconds minimum
+        const startTime = new Date().getTime();
+    
+        window.onload = function () {
+            const elapsedTime = new Date().getTime() - startTime;
+            const remainingTime = Math.max(0, minLoadTime - elapsedTime);
+    
+            setTimeout(() => {
+                document.getElementById("preloader").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, remainingTime);
+        };
+    });
+    </script>
+    
+</body>
+</html>
