@@ -38,6 +38,7 @@ arr.shift();     // [1,2,3]
 ```js
 [1,2,3].forEach((val, i) => console.log(i, val));
 ```
+- Other way round in `py` => `enumerate` returns ***(idx,val)*** 
 
 ### ✅ `map()` → transform each element → returns **new array**
 
